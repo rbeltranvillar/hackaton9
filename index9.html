@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <h1>Ejercicio 9 : calculo de edad</h1>  
+    <p>introduce el año de nacimiento en formato yyyy</p>  
+    <input id="num1" placeholder="año" minlength="4"><br>  
+    <button type="button" onclick="myFunction()">calcular</button>  
+    <p id="edad"></p>
+    
+    <script>
+        function myFunction() { 
+            let x,calculoedad,text ;
+            x = document.getElementById("num1").value;
+        if (isNaN(x)) { text= "introducir numeros validos"}
+         else {  
+        calculoedad= ( 2020-parseFloat(x));
+        text=calculoedad; }
+        document.getElementById("edad").innerHTML=text;
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

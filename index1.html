@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicio 1 : Sumar dos números</h1>  
+    <p>introduce los números a sumar:</p>  
+    <input id="num1"><br>  
+    <input id="num2">  
+    <button type="button" onclick="myFunction()">Sumar</button>  
+    <p id="sumafinal"></p>  
+
+    <script>
+        function myFunction() { 
+            var x,y,suma,text ;
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+        if (isNaN(x) || isNaN(y)) { text= "introducir numeros validos"}
+         else {  
+        suma= parseFloat(x)+parseFloat(y);
+        text=suma; }
+        document.getElementById("sumafinal").innerHTML=text;
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

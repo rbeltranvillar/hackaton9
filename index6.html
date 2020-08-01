@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <h1>Ejercicio 6 : calculo de sueldo</h1>  
+    <p>introduce la información salarial del trabajador</p>  
+    <input id="num1" placeholder="ingresa el valor de la H-H"><br>  
+    <input id="num2" placeholder="ingresa las horas trabajadas en la semana">  
+    <button type="button" onclick="myFunction()">calcular</button>  
+    <p id="salario"></p>
+    
+    <script>
+        function myFunction() { 
+            let x,y,salario,text ;
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+        if (isNaN(x) || isNaN(y)) { text= "introducir numeros validos"}
+         else {  
+        calculosalario= (parseFloat(x)*parseFloat(y));
+        text=calculosalario; }
+        document.getElementById("salario").innerHTML=text;
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

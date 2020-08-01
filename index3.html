@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Ejercicio 3 : calcular el area de un rectangulo</h1>  
+    <p>introduce los datos del triangulo:</p>  
+    <input id="num1" placeholder="Ingresa la altura en cm"><br>  
+    <input id="num2" placeholder="ingresa la base en cm">  
+    <button type="button" onclick="myFunction()">Sumar</button>  
+    <p id="area"></p>
+    
+    <script>
+        function myFunction() { 
+            let x,y,calculoarea,text ;
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+        if (isNaN(x) || isNaN(y)) { text= "introducir numeros validos"}
+         else {  
+        calculoarea= (parseFloat(x)*parseFloat(y)/2);
+        text=calculoarea; }
+        document.getElementById("area").innerHTML=text;
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

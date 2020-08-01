@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h1>Ejercicio 7 : calculo de cantidad de tela en pulgadas</h1>  
+    <p>introduce la necesidad de tela en metros</p>  
+    <input id="num1" placeholder="ingresa la cantidad en metros"><br>  
+    <button type="button" onclick="myFunction()">calcular</button>  
+    <p id="pulgadas"></p>
+    
+    <script>
+        function myFunction() { 
+            let x,calculopulgadas,text ;
+            x = document.getElementById("num1").value;
+        if (isNaN(x)) { text= "introducir numeros validos"}
+         else {  
+        calculopulgadas= (parseFloat(x)/0.0254);
+        text=calculopulgadas; }
+        document.getElementById("pulgadas").innerHTML=text;
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

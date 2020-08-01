@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Ejercicio 2 : notas promedio</h1>  
+    <p>introduce las notas a promediar:</p>  
+    <input id="nota1"><br>  
+    <input id="nota2"><br>
+    <input id="nota3"><br>
+    <input id="nota4"><br>    
+    <button type="button" onclick="myFunction()">promedio</button>  
+    <p id="promediofinal"></p>  
+
+    <script>
+        function myFunction() { 
+            let x,y,z,q,promedio,text;
+            x = document.getElementById("nota1").value;
+            y = document.getElementById("nota2").value;
+            z = document.getElementById("nota3").value;
+            q = document.getElementById("nota4").value;
+
+        if (isNaN(x) || isNaN(y) || isNaN(z) || isNaN(q)) { text= "introducir notas validas"}
+         else {  
+        promedio= ((parseFloat(x)+parseFloat(y)+parseFloat(z)+parseFloat(q))/4);
+        text=promedio; }
+        document.getElementById("promediofinal").innerHTML=text;
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

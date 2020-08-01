@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <h1>Ejercicio 10 : edad promedio</h1>  
+    <p>introduce la edad de las 3 personas</p>  
+    <input id="num1" placeholder="edad1" minlength="1"><br>
+    <input id="num2" placeholder="edad2" minlength="1"><br>  
+    <input id="num3" placeholder="edad3" minlength="1"><br>    
+    <button type="button" onclick="myFunction()">calcular</button>  
+    <p id="edad"></p>
+    
+    <script>
+        function myFunction() { 
+            let x,y,z,calculoedad,text ;
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+            z = document.getElementById("num3").value;
+        if (isNaN(x)||isNaN(y)||isNaN(z) ) { text= "introducir numeros validos"}
+         else {  
+        calculoedad= ( (parseFloat(x)+parseFloat(y)+parseFloat(z))/3);
+        text=calculoedad; }
+        document.getElementById("edad").innerHTML=text;
+        }
+
+    </script>
+
+
+    
+</body>
+</html>

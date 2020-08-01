@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <h1>Ejercicio 8 : cambio de dolares</h1>  
+    <p>introduce la cantidad de soles</p>  
+    <input id="num1" placeholder="ingresa la cantidad"><br>  
+    <button type="button" onclick="myFunction()">calcular</button>  
+    <p id="dolares"></p>
+    
+    <script>
+        function myFunction() { 
+            let x,calculodolares,text ;
+            x = document.getElementById("num1").value;
+        if (isNaN(x)) { text= "introducir numeros validos"}
+         else {  
+        calculodolares= (parseFloat(x)/3.45);
+        text=calculodolares; }
+        document.getElementById("dolares").innerHTML=text;
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

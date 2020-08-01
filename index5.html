@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>Ejercicio 5 : calcular el area de un circulo</h1>  
+    <p>introduce los datos del rectangulo:</p>  
+    <input id="num1" placeholder="Ingresa el radio en cm"><br>  
+    <button type="button" onclick="myFunction()">area</button>  
+    <p id="area"></p>
+    
+    <script>
+        function myFunction() { 
+            let x,calculoarea,text ;
+            x = document.getElementById("num1").value;
+            
+        if (isNaN(x)) { text= "introducir numeros validos"}
+         else {  
+        calculoarea= (parseFloat(x)*parseFloat(x)*3.1416);
+        text=calculoarea; }
+        document.getElementById("area").innerHTML=text;
+        }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
