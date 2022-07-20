@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "terser": "^5.0.0",
+    "terser": "^5.14.2",
     "uglify-js": "^3.10.0"
   },
   "dependencies": {},
